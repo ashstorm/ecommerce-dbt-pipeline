@@ -16,7 +16,7 @@ tables= {
     "raw_order_items":  "olist_order_items_dataset.csv",
     "raw_payments":   "olist_order_payments_dataset.csv",
     "raw_reviews":    "olist_order_reviews_dataset.csv",
-    "raw_orders":   "olist_order_reviews_dataset.csv",
+    "raw_orders":   "olist_orders_dataset.csv",
     "raw_products": "olist_products_dataset.csv",
     "raw_sellers":  "olist_sellers_dataset.csv",
     "raw_name_translations": "product_category_name_translation.csv",
