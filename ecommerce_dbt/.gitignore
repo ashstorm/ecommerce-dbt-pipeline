@@ -1,5 +1,14 @@
-
+# dbt
 target/
 dbt_packages/
 logs/
 dbt_internal_packages/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Sensitive
+.env
+profiles.yml
