@@ -10,8 +10,8 @@ cleaned as (
         order_purchase_timestamp::timestamp as purchased_at, 
         order_approved_at::timestamp as approved_at, 
         order_delivered_carrier_date::timestamp as shipped_at, 
-        order_delivered_customer_date::timestamp as deliveread_at, 
-        order_estimated_delivery_date::timestamp as order_estimated_delivery_at
+        order_delivered_customer_date::timestamp as delivered_at, 
+        order_estimated_delivery_date::timestamp as estimated_delivery_at
     from source
 )
 
