@@ -1,16 +1,21 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
 from snowflake.sqlalchemy import URL
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 # Snowflake connection
 engine = create_engine(URL(
-    account="DDJFEQH-XCC20271",
-    user="asharma",
-    password="WciuzKVN9CY7tab",
-    database="ecommerce_db",
-    schema="RAW",
-    warehouse="ecommerce_wh",
-    role="ACCOUNTADMIN"
+    account=os.getenv("SNOWFLAKE_ACCOUNT"),
+    user=os.getenv("SNOWFLAKE_USER"),
+    password=os.getenv("SNOWFLAKE_PASSWORD"),
+    database=os.getenv("SNOWFLAKE_DATABASE"),
+    schema=os.getenv("SNOWFLAKE_SCHEMA"),
+    warehouse=os.getenv("SNOWFLAKE_WAREHOUSE"),
+    role=os.getenv("SNOWFLAKE_ROLE")
 ))
 
 # Tables to load
