@@ -47,4 +47,4 @@ and accepted value validation.
 + Automatic retries and error handling
 
 ## Snowflake
-+Migrated pipeline from PostgreSQL to Snowflake
++ Migrated pipeline from PostgreSQL to Snowflake
