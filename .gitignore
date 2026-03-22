@@ -1,3 +1,4 @@
 # Airflow
 airflow/logs/
 airflow/plugins/
+.env
