@@ -1,0 +1,8 @@
+FROM apache/superset:2.1.0
+
+USER root
+RUN pip install --no-cache-dir \
+    snowflake-sqlalchemy==1.4.7 \
+    snowflake-connector-python==3.0.4 \
+    cryptography==39.0.2
+USER superset
