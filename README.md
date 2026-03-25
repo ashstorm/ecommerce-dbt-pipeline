@@ -8,19 +8,33 @@ and hosted on Snowflake.
 
 ## Architecture
 Raw Data (Kaggle CSVs)
+
 ↓
+
 Python + SQLAlchemy (Ingestion)
+
 ↓
+
 PostgreSQL / Snowflake (Warehouse)
+
 ↓
+
 dbt Core (Transformation)
+
 ├── Staging Layer    → clean & rename
+
 ├── Intermediate     → join tables
+
 └── Marts            → business ready
+
 ↓
+
 Apache Airflow (Orchestration)
+
 ↓
+
 Apache Superset (BI Dashboard)
+
 ## Tech Stack
 | Tool | Purpose |
 |---|---|
