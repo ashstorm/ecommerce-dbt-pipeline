@@ -1,5 +1,5 @@
-with source as(
-    SELECT * from{{source('raw', 'raw_orders')}}
+with source as (
+    SELECT * from {{source('raw','raw_orders')}}
 ),
 
 cleaned as (
